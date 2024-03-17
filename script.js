@@ -1,6 +1,6 @@
 const grid = document.querySelector(".grid");
 
-let gridSize = 20;
+let gridSize = 40
 
 for (let i = 0; i < gridSize; i++) {
   let parentDiv = document.createElement("div")
@@ -12,7 +12,7 @@ for (let i = 0; i < gridSize; i++) {
     div.classList.add("block")
     div.setAttribute("id", `row:${i+1}-col:${j+1}`)
     
-    div.addEventListener("mouseenter",  e => {
+    div.addEventListener("mouseenter",  () => {
       div.style.backgroundColor = "#fff"
     })
 
@@ -22,3 +22,11 @@ for (let i = 0; i < gridSize; i++) {
 }
 
 
+
+const btn = document.querySelector("#btn-clear");
+btn.addEventListener("click", () => {
+  const blocks = document.querySelectorAll(".block")
+ blocks.forEach(block => {
+    block.style.backgroundColor = ""
+  })
+})
