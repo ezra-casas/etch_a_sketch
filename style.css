@@ -1,61 +1,47 @@
-body{
-    background: #3b3b3b;
-    color: #fff;
-    display: flex;
-    justify-content: center;
+body {
+  background: #3b3b3b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
-.grid{
-    width: auto;
-    height: auto;
-    border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.row{
-    margin: 0;
-    padding: 0;
-    display: grid; 
-    grid-auto-flow: column; 
-    
+#grid {
+  display: flex;
+  border: 2px solid white;
+  flex-wrap: wrap;
 }
 
-
-.block{
-    text-align: center; 
-    width: 15px;
-    height: 15px;
-    border: 1px solid #000;
-    padding: 0;
-    margin: 0;
+.block {
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
 
-.block:hover{
-
-    background-color: #fff;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+button{
+  cursor: pointer;
+  width: 100px;
+  height: 100%;
 }
 
 .btns-container{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .grid-size{
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
 }
+
 .box{
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
-    text-align: center;
-    display: flex;
-    border-radius: 4px;
+  dislpay: flex;
+  width: 70px;
 }

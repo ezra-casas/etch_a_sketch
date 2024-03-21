@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  </head>
 
   <div class="container">
     <h1>Etch-A-Sketch</h1>
-    <div class="grid"></div>
+    <div id="grid"></div>
     <div class="btns-container">       
+      <button type="button" id="randomize">Randomize Color</button>
       <button id="btn-clear" type="button">clear</button>
       <div class="grid-size">
-        <div class="box" id="8"> 
-          8
-        </div>
-        <div class="box" id="16"> 
-          16
-        </div>
-        <div class="box" id="32"> 
-          32
-        </div>
+        <p>Grid Size:</p>
+        <button class="box" id="16"> 
+          Small
+        </button>
+        <button class="box" id="32"> 
+          Medium 
+        </button>
+        <button class="box" id="64"> 
+          Large
+        </button>
+      </div>
+      <div>
+        <input type="range" name="slider" value="32" min="16" max="64"  id="slider" step="1">
       </div>
     </div>
-
   </div>
 
 
